@@ -1,0 +1,49 @@
+
+ #map {
+  height: 95vh;
+}
+
+input {
+  margin: 1rem .5rem 0 .5rem;
+  height: 1rem;
+  width: auto;
+}
+
+button {
+  height: 1.5rem;
+  margin-top: 1rem;
+}
+
+p {
+  margin-left: .5rem;
+}
+
+.eventType {
+  grid-area: eventType;
+}
+
+.eventDate {
+  grid-area: eventDate;
+}
+
+.description {
+  grid-area: description;
+}
+
+.source {
+  grid-area: source;
+}
+
+
+.infoWindow {
+  display: grid;
+  grid-gap: none;
+  /* height: 25vh;
+  width: 50vw; */
+  overflow-x: wrap;
+  overflow-y: scroll;
+  grid-template-areas: 
+  'eventType eventDate'
+  'description description'
+  'source fatalities'
+}
